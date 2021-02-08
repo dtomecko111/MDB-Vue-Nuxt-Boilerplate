@@ -1,6 +1,7 @@
 
 export default {
   mode: 'universal',
+  target: "static",
   /*
   ** Headers of the page
   */
@@ -12,7 +13,11 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: "stylesheet",
+        href: "https://cdn.cve.so/img/Themes/DefaultClean/Content/css/style.min.css",
+      }
     ]
   },
   /*
@@ -46,8 +51,8 @@ export default {
   mdbvue: {
     // icons: false,
     // roboto: false,
-    // css: false,
-    // bootstrap: false
+     css: true,
+     bootstrap: false
   },
   /*
   ** Build configuration
