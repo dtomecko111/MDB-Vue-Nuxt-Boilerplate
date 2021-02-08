@@ -11,8 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "mdbvue": "^6.5.1",
-    "nuxt": "^2.0.0"
-  },
-  "devDependencies": {}
+    "axios": "latest",
+    "mdbvue": "git+https://oauth2:J6F2-ry8LsgtmovpEVTN@git.mdbootstrap.com/mdb/vue/vu-pro.git",
+    "nuxt": "^2.0.0",
+    "vue": "^2.6.12"
+  }
 }

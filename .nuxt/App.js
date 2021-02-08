@@ -1,25 +1,19 @@
 import Vue from 'vue'
 
-import {
-  getMatchedComponentsInstances,
-  getChildrenComponentInstancesUsingFetch,
-  promisify,
-  globalHandleError,
-  sanitizeComponent
-} from './utils'
-
+import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
+import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
-
-import '../node_modules/bootstrap-css-only/css/bootstrap.min.css'
 
 import '../node_modules/mdbvue/lib/css/mdb.min.css'
 
 import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 
+import _7705a157 from '../layouts/about.vue'
 import _6f6c098b from '../layouts/default.vue'
+import _77dd5794 from '../layouts/plain.vue'
 
-const layouts = { "_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_about": sanitizeComponent(_7705a157),"_default": sanitizeComponent(_6f6c098b),"_plain": sanitizeComponent(_77dd5794) }
 
 export default {
   render (h, props) {
@@ -73,9 +67,10 @@ export default {
   },
   created () {
     // Add this.$nuxt in child instances
-    Vue.prototype.$nuxt = this
-    // add to window so we can listen when ready
+    this.$root.$options.$nuxt = this
+
     if (process.client) {
+      // add to window so we can listen when ready
       window.$nuxt = this
 
       this.refreshOnlineStatus()
@@ -89,9 +84,10 @@ export default {
     this.context = this.$options.context
   },
 
-  mounted () {
+  async mounted () {
     this.$loading = this.$refs.loading
   },
+
   watch: {
     'nuxt.err': 'errorChanged'
   },
@@ -101,9 +97,13 @@ export default {
       return !this.isOnline
     },
 
-      isFetching() {
+    isFetching () {
       return this.nbFetching > 0
-    }
+    },
+
+    isPreview () {
+      return Boolean(this.$options.previewData)
+    },
   },
 
   methods: {
@@ -166,15 +166,24 @@ export default {
       }
       this.$loading.finish()
     },
-
     errorChanged () {
-      if (this.nuxt.err && this.$loading) {
-        if (this.$loading.fail) {
-          this.$loading.fail(this.nuxt.err)
+      if (this.nuxt.err) {
+        if (this.$loading) {
+          if (this.$loading.fail) {
+            this.$loading.fail(this.nuxt.err)
+          }
+          if (this.$loading.finish) {
+            this.$loading.finish()
+          }
         }
-        if (this.$loading.finish) {
-          this.$loading.finish()
+
+        let errorLayout = (NuxtError.options || NuxtError).layout;
+
+        if (typeof errorLayout === 'function') {
+          errorLayout = errorLayout(this.context)
         }
+
+        this.setLayout(errorLayout)
       }
     },
 
@@ -195,7 +204,7 @@ export default {
         layout = 'default'
       }
       return Promise.resolve(layouts['_' + layout])
-    }
+    },
   },
 
   components: {

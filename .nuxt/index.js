@@ -1,4 +1,5 @@
 import Vue from 'vue'
+
 import Meta from 'vue-meta'
 import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
@@ -36,11 +37,18 @@ Vue.component('NChild', NuxtChild)
 // Component: <Nuxt>
 Vue.component(Nuxt.name, Nuxt)
 
+Object.defineProperty(Vue.prototype, '$nuxt', {
+  get() {
+    return this.$root.$options.$nuxt
+  },
+  configurable: true
+})
+
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
-async function createApp (ssrContext) {
+async function createApp(ssrContext, config = {}) {
   const router = await createRouter(ssrContext)
 
   // Create Root instance
@@ -48,7 +56,7 @@ async function createApp (ssrContext) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"mdb-vue-nuxt-app","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"MDB Vue & Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:300,400,500,700&display=swap"}],"style":[],"script":[]},
+    head: {"title":"mdb-vue-nuxt-app","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"MDB Vue & Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.cve.so\u002Fimg\u002FThemes\u002FDefaultClean\u002FContent\u002Fcss\u002Fstyle.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:300,400,500,700&display=swap"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -116,14 +124,69 @@ async function createApp (ssrContext) {
     ssrContext
   })
 
+  function inject(key, value) {
+    if (!key) {
+      throw new Error('inject(key, value) has no key provided')
+    }
+    if (value === undefined) {
+      throw new Error(`inject('${key}', value) has no value provided`)
+    }
+
+    key = '$' + key
+    // Add into app
+    app[key] = value
+    // Add into context
+    if (!app.context[key]) {
+      app.context[key] = value
+    }
+
+    // Check if plugin not already installed
+    const installKey = '__nuxt_' + key + '_installed__'
+    if (Vue[installKey]) {
+      return
+    }
+    Vue[installKey] = true
+    // Call Vue.use() to install the plugin into vm
+    Vue.use(() => {
+      if (!Object.prototype.hasOwnProperty.call(Vue.prototype, key)) {
+        Object.defineProperty(Vue.prototype, key, {
+          get () {
+            return this.$root.$options[key]
+          }
+        })
+      }
+    })
+  }
+
+  // Inject runtime config as $config
+  inject('config', config)
+
+  // Add enablePreview(previewData = {}) in context for plugins
+  if (process.static && process.client) {
+    app.context.enablePreview = function (previewData = {}) {
+      app.previewData = Object.assign({}, previewData)
+      inject('preview', previewData)
+    }
+  }
   // Plugin execution
+
+  // Lock enablePreview in context
+  if (process.static && process.client) {
+    app.context.enablePreview = function () {
+      console.warn('You cannot call enablePreview() outside a plugin.')
+    }
+  }
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {
     await new Promise((resolve, reject) => {
-      router.push(ssrContext.url, resolve, () => {
+      router.push(ssrContext.url, resolve, (err) => {
+        // https://github.com/vuejs/vue-router/blob/v3.4.3/src/util/errors.js
+        if (!err._isRouter) return reject(err)
+        if (err.type !== 2 /* NavigationFailureType.redirected */) return resolve()
+
         // navigated to a different route in router guard
-        const unregister = router.afterEach(async (to, from, next) => {
+        const unregister = router.afterEach(async (to, from) => {
           ssrContext.url = to.fullPath
           app.context.route = await getRouteData(to)
           app.context.params = to.params || {}
