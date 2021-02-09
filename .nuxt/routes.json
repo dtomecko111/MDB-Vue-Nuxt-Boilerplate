@@ -7,6 +7,13 @@
     "_name": "_26e33ab8"
   },
   {
+    "name": "blog",
+    "path": "/blog",
+    "component": "/home/dtomecko/dev/MDBTest/pages/blog/index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_5984ddfc"
+  },
+  {
     "name": "cp",
     "path": "/cp",
     "component": "/home/dtomecko/dev/MDBTest/pages/cp.vue",
@@ -40,6 +47,20 @@
     "component": "/home/dtomecko/dev/MDBTest/pages/state-page/ct.vue",
     "chunkName": "pages/state-page/ct",
     "_name": "_8dd886a4"
+  },
+  {
+    "name": "articles-slug",
+    "path": "/articles/:slug?",
+    "component": "/home/dtomecko/dev/MDBTest/pages/articles/_slug.vue",
+    "chunkName": "pages/articles/_slug",
+    "_name": "_781da20f"
+  },
+  {
+    "name": "categories-slug",
+    "path": "/categories/:slug?",
+    "component": "/home/dtomecko/dev/MDBTest/pages/categories/_slug.vue",
+    "chunkName": "pages/categories/_slug",
+    "_name": "_0dd4776e"
   },
   {
     "name": "index",

@@ -13,6 +13,12 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
+import nuxt_plugin_cookieuniversalnuxt_9be0aaca from 'nuxt_plugin_cookieuniversalnuxt_9be0aaca' // Source: ./cookie-universal-nuxt.js (mode: 'all')
+import nuxt_plugin_http_050e56fd from 'nuxt_plugin_http_050e56fd' // Source: ./http.js (mode: 'all')
+import nuxt_plugin_strapi_4bfe63c8 from 'nuxt_plugin_strapi_4bfe63c8' // Source: ./strapi.js (mode: 'all')
+import nuxt_plugin_markdownit_14c76780 from 'nuxt_plugin_markdownit_14c76780' // Source: ./markdown-it.js (mode: 'all')
+import nuxt_plugin_uikit_47fa8f2a from 'nuxt_plugin_uikit_47fa8f2a' // Source: ../plugins/uikit.js (mode: 'client')
+
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
 
@@ -199,6 +205,26 @@ async function createApp(ssrContext, config = {}) {
     }
   }
   // Plugin execution
+
+  if (typeof nuxt_plugin_cookieuniversalnuxt_9be0aaca === 'function') {
+    await nuxt_plugin_cookieuniversalnuxt_9be0aaca(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_http_050e56fd === 'function') {
+    await nuxt_plugin_http_050e56fd(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_strapi_4bfe63c8 === 'function') {
+    await nuxt_plugin_strapi_4bfe63c8(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_markdownit_14c76780 === 'function') {
+    await nuxt_plugin_markdownit_14c76780(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_uikit_47fa8f2a === 'function') {
+    await nuxt_plugin_uikit_47fa8f2a(app.context, inject)
+  }
 
   // Lock enablePreview in context
   if (process.static && process.client) {

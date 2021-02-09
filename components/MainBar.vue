@@ -5,7 +5,7 @@
         <div class="main-header-logo"> <a href="/"><img src="https://cdn.cve.so/img/Themes/DefaultClean/Content/images/clearview_logo.webp" alt="Clearview Energy"></a> </div>
         <nav id="site-navigation">
           <ul class="mega-menu megaMenu" data-isrtlenabled="false" data-enableclickfordropdown="false">
-            <li class="has-sublist"><a href="aboutus" class="with-subcategories" title="About us"><span> About Us</span></a>
+            <li class="has-sublist"><a href="/aboutus" class="with-subcategories" title="About us"><span> About Us</span></a>
               <div class="plus-button"></div>
               <div class="sublist-wrap">
                 <ul class="sublist">

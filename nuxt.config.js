@@ -1,3 +1,4 @@
+const strapiBaseUri = process.env.API_URL || "https://cvstrapi.cve.so";
 
 export default {
   mode: 'universal',
@@ -32,19 +33,37 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
-  /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-  ],
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    'mdbvue/nuxt'
-  ],
+ plugins: [{ src: "~/plugins/uikit.js", ssr: false }],
+ modules: ["@nuxtjs/markdownit", "@nuxtjs/strapi",'mdbvue/nuxt'],
+ strapi: {
+   url: strapiBaseUri,
+   entities: [
+     {
+       name: "articles",
+       type: "collection",
+     },
+     {
+       name: "categories",
+       type: "collection",
+     },
+     {
+       name: "homepage",
+       type: "single",
+     },
+     {
+       name: "global",
+       type: "single",
+     },
+   ],
+ },
+ markdownit: {
+   preset: "default",
+   linkify: true,
+   breaks: true,
+   injected: true,
+   html: true,
+ },
+ 
    /*
   ** MDB Vue module:
   */
