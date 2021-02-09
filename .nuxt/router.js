@@ -9,6 +9,7 @@ const _d3854d78 = () => interopDefault(import('../pages/cp.vue' /* webpackChunkN
 const _2b613a5e = () => interopDefault(import('../pages/RecentPosts.vue' /* webpackChunkName: "pages/RecentPosts" */))
 const _84dffde4 = () => interopDefault(import('../pages/tst.vue' /* webpackChunkName: "pages/tst" */))
 const _52878566 = () => interopDefault(import('../pages/blog/post.vue' /* webpackChunkName: "pages/blog/post" */))
+const _8dd886a4 = () => interopDefault(import('../pages/state-page/ct.vue' /* webpackChunkName: "pages/state-page/ct" */))
 const _42b05d4b = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -47,6 +48,10 @@ export const routerOptions = {
     path: "/blog/post",
     component: _52878566,
     name: "blog-post"
+  }, {
+    path: "/state-page/ct",
+    component: _8dd886a4,
+    name: "state-page-ct"
   }, {
     path: "/",
     component: _42b05d4b,

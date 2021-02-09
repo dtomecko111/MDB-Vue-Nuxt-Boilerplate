@@ -12,8 +12,9 @@ import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 import _7705a157 from '../layouts/about.vue'
 import _6f6c098b from '../layouts/default.vue'
 import _77dd5794 from '../layouts/plain.vue'
+import _780b425b from '../layouts/state.vue'
 
-const layouts = { "_about": sanitizeComponent(_7705a157),"_default": sanitizeComponent(_6f6c098b),"_plain": sanitizeComponent(_77dd5794) }
+const layouts = { "_about": sanitizeComponent(_7705a157),"_default": sanitizeComponent(_6f6c098b),"_plain": sanitizeComponent(_77dd5794),"_state": sanitizeComponent(_780b425b) }
 
 export default {
   render (h, props) {

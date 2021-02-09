@@ -35,6 +35,13 @@
     "_name": "_52878566"
   },
   {
+    "name": "state-page-ct",
+    "path": "/state-page/ct",
+    "component": "/home/dtomecko/dev/MDBTest/pages/state-page/ct.vue",
+    "chunkName": "pages/state-page/ct",
+    "_name": "_8dd886a4"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/dtomecko/dev/MDBTest/pages/index.vue",
