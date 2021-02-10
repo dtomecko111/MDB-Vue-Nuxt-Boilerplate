@@ -46,25 +46,24 @@
 			<div class="rates__plan-description">
 				<div class="rates__icon-container">
 					<div class="rates__icon">
-						<img src="images/leaf-icon.webp">
+						<img src="https://cdn.cve.so/img/Themes/DefaultClean/Content/images/leaf-icon.webp">
 					</div>
 						<div class="rates__icon">
-						<img src="images/leaf-icon.webp">
+						<img src="https://cdn.cve.so/img/Themes/DefaultClean/Content/images/leaf-icon.webp">
 					</div>
 				</div>
 				<p>A 100 % green product that’s great for you and the environment by providing plans that offer stable pricing.</p>
 			</div>
-			
 			<div id="more-info-btn-container" class="rates__btn-container rates__btn-container--benefits">
 				<span class="rate__terms">Terms: 6 Months</span>
-				<a class="btn btn-primary more-info-btn dropdown-toggle">Plan Benefits</a>
+				<a @click="showplan_001 = !showplan_001" class="btn btn-primary more-info-btn dropdown-toggle">Plan Benefits</a>
 			</div>
 			
 			<div class="rates__btn-container">
-				<a href="#" class="btn btn-secondary">Sign up today</a>
+				<a href="#" class="btn btn-sucess">Sign up today</a>
 			</div>
 			
-					 <div class="rates__benefits">
+					 <div v-if="showplan_001"  class="rates__benefits">
 			<div class="rates__benefits-list-container">
 				<h3>Plan Benefits</h3>
 				<ul class="rates__benefits-list">
@@ -79,20 +78,33 @@
 				</div>
 			</div>	
 			<div class="rates__benefits-close">
-				<a class="rates__benefits-close-btn" href="#benefits_001">close</a>
+				<a @click="showplan_001 = !showplan_001"  class="rates__benefits-close-btn" href="#benefits_001">close</a>
 			</div>
 			</div><!-- rates-benefits -->
+          
 		 </div><!-- rates__add-info -->
-		
+		  
 
 
 	</div><!-- rates -->
 </template>
 
 <script>
+import { mdbCollapse, mdbContainer } from 'mdbvue';
 export default {
-     layout: 'state'
-}
+     layout: 'state',
+    name: 'CollapsePage',
+    components: {
+      mdbCollapse,
+      mdbContainer
+    },
+    data() {
+   return {
+     showplan_001: false 
+     }
+     }
+  }
+</script>
 </script>
 
 

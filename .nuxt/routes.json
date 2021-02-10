@@ -21,11 +21,25 @@
     "_name": "_d3854d78"
   },
   {
+    "name": "password-reset",
+    "path": "/password-reset",
+    "component": "/home/dtomecko/dev/MDBTest/pages/password-reset.vue",
+    "chunkName": "pages/password-reset",
+    "_name": "_1fc459f4"
+  },
+  {
     "name": "RecentPosts",
     "path": "/RecentPosts",
     "component": "/home/dtomecko/dev/MDBTest/pages/RecentPosts.vue",
     "chunkName": "pages/RecentPosts",
     "_name": "_2b613a5e"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "/home/dtomecko/dev/MDBTest/pages/register.vue",
+    "chunkName": "pages/register",
+    "_name": "_3325a53a"
   },
   {
     "name": "tst",
@@ -40,6 +54,13 @@
     "component": "/home/dtomecko/dev/MDBTest/pages/blog/post.vue",
     "chunkName": "pages/blog/post",
     "_name": "_52878566"
+  },
+  {
+    "name": "customer-care-login",
+    "path": "/customer-care/login",
+    "component": "/home/dtomecko/dev/MDBTest/pages/customer-care/login.vue",
+    "chunkName": "pages/customer-care/login",
+    "_name": "_29c0121a"
   },
   {
     "name": "state-page-ct",

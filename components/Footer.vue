@@ -67,7 +67,7 @@
           <div class="footer-socials"> <a href="https://instagram.com"><img src="https://cdn.cve.so/img/Themes/DefaultClean/Content/images/instagram-dark.webp" alt="instagram"></a> <a href="https://facebook.com"><img src="https://cdn.cve.so/img/Themes/DefaultClean/Content/images/facebook-dark.webp" alt="facebook"></a> <a href="https://youtube.com"><img src="https://cdn.cve.so/img/Themes/DefaultClean/Content/images/youtube-dark.webp" alt="youtube"></a> <a href="https://twitter.com"><img src="https://cdn.cve.so/img/Themes/DefaultClean/Content/images/twitter-dark.webp" alt="twitter"></a> </div>
           <h4>Existing Customers</h4>
           <ul>
-            <li><a href="https://customer.clearviewenergy.com/Account/Login">Customer Login</a></li>
+            <li><a href="/customer-care/login">Customer Login</a></li>
             <li><a href="https://clearview.myaccount.energy/sigma/myeaccount/?connectName=SigmaClv">Texas Account Login</a></li>
             <li><a href="payment-options-texas.html">Texas Payment Centers</a></li>
             <li><a href="referral-program.html">Referral Program</a></li>

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/state-page/ct", {data:[{}],fetch:[],mutations:[]});

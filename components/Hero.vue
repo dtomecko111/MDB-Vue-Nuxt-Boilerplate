@@ -9,25 +9,7 @@
 					
 					<div class="col-md-4 offset-md-1">
 						<div class="signup-form-header">
-							<form>
-
-								<h2>Enter your zip code to find the prices and plans that are right for you</h2>
-
-								<input id="zip" class="form-control" name="zip" type="text" pattern="[0-9]*">
-
-								<div class="form-check form-check-inline">
-									<input type="radio" id="resi" class="form-check-input" name="BtnActType" value="Residential" checked=""> 
-									<label class="form-check-label" for="resi">Residential</label>
-								</div>
-
-								<div class="form-check form-check-inline">
-									<input type="radio" id="comm" class="form-check-input" name="BtnActType" value="Commercial">
-									<label class="form-check-label" for="comm">Commercial</label>
-								</div>
-
-								<button onclick="window.location.href = 'rates-plans-wrates.html';" type="button" class="btn btn-primary" >Sign Up Today!</button>
-
-							</form>
+							<ZipBox />
 						</div>
 					</div>
 				  
@@ -38,8 +20,9 @@
 </template>
 
 <script>
+import ZipBox from "~/components/ZipBox";
 export default {
-
+	components:{ZipBox}
 }
 </script>
 

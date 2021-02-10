@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/cp", {data:[{}],fetch:[],mutations:[]});

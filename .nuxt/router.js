@@ -7,9 +7,12 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _26e33ab8 = () => interopDefault(import('../pages/AboutUs.vue' /* webpackChunkName: "pages/AboutUs" */))
 const _5984ddfc = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
 const _d3854d78 = () => interopDefault(import('../pages/cp.vue' /* webpackChunkName: "pages/cp" */))
+const _1fc459f4 = () => interopDefault(import('../pages/password-reset.vue' /* webpackChunkName: "pages/password-reset" */))
 const _2b613a5e = () => interopDefault(import('../pages/RecentPosts.vue' /* webpackChunkName: "pages/RecentPosts" */))
+const _3325a53a = () => interopDefault(import('../pages/register.vue' /* webpackChunkName: "pages/register" */))
 const _84dffde4 = () => interopDefault(import('../pages/tst.vue' /* webpackChunkName: "pages/tst" */))
 const _52878566 = () => interopDefault(import('../pages/blog/post.vue' /* webpackChunkName: "pages/blog/post" */))
+const _29c0121a = () => interopDefault(import('../pages/customer-care/login.vue' /* webpackChunkName: "pages/customer-care/login" */))
 const _8dd886a4 = () => interopDefault(import('../pages/state-page/ct.vue' /* webpackChunkName: "pages/state-page/ct" */))
 const _781da20f = () => interopDefault(import('../pages/articles/_slug.vue' /* webpackChunkName: "pages/articles/_slug" */))
 const _0dd4776e = () => interopDefault(import('../pages/categories/_slug.vue' /* webpackChunkName: "pages/categories/_slug" */))
@@ -44,9 +47,17 @@ export const routerOptions = {
     component: _d3854d78,
     name: "cp"
   }, {
+    path: "/password-reset",
+    component: _1fc459f4,
+    name: "password-reset"
+  }, {
     path: "/RecentPosts",
     component: _2b613a5e,
     name: "RecentPosts"
+  }, {
+    path: "/register",
+    component: _3325a53a,
+    name: "register"
   }, {
     path: "/tst",
     component: _84dffde4,
@@ -55,6 +66,10 @@ export const routerOptions = {
     path: "/blog/post",
     component: _52878566,
     name: "blog-post"
+  }, {
+    path: "/customer-care/login",
+    component: _29c0121a,
+    name: "customer-care-login"
   }, {
     path: "/state-page/ct",
     component: _8dd886a4,

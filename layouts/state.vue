@@ -6,7 +6,9 @@
   </header>
   <HeroState />
   <main>
+  <div class="master-column-wrapper container">
     <nuxt />
+    </div>
   </main>
 <Footer />
 </div>
