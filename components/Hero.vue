@@ -1,4 +1,7 @@
 <template>
+
+
+
   <div class="featured" style="background-image:url(https://cdn.cve.so/img/Themes/DefaultClean/Content/images/home-hero-bg.webp);">
 			  <div class="container">
 			  	<div class="row">
@@ -27,5 +30,4 @@ export default {
 </script>
 
 <style>
-
-</style>
+</style>I h

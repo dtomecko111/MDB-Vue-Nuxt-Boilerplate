@@ -1,10 +1,17 @@
 [
   {
-    "name": "AboutUs",
-    "path": "/AboutUs",
-    "component": "/home/dtomecko/dev/MDBTest/pages/AboutUs.vue",
-    "chunkName": "pages/AboutUs",
-    "_name": "_26e33ab8"
+    "name": "404",
+    "path": "/404",
+    "component": "/home/dtomecko/dev/MDBTest/pages/404.vue",
+    "chunkName": "pages/404",
+    "_name": "_0e269ef1"
+  },
+  {
+    "name": "AboutUsold",
+    "path": "/AboutUsold",
+    "component": "/home/dtomecko/dev/MDBTest/pages/AboutUsold.vue",
+    "chunkName": "pages/AboutUsold",
+    "_name": "_ac328c9a"
   },
   {
     "name": "blog",
@@ -89,5 +96,12 @@
     "component": "/home/dtomecko/dev/MDBTest/pages/index.vue",
     "chunkName": "pages/index",
     "_name": "_42b05d4b"
+  },
+  {
+    "name": "slug",
+    "path": "/:slug",
+    "component": "/home/dtomecko/dev/MDBTest/pages/_slug.vue",
+    "chunkName": "pages/_slug",
+    "_name": "_40f9bc03"
   }
 ]

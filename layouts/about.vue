@@ -4,8 +4,9 @@
     <TopBar />
     <MainBar />
   </header>
-  <HeroAbout />
+  
   <main>
+    <HeroAbout :pagename="pagename"/>
     <nuxt />
   </main>
 <Footer />
@@ -25,7 +26,13 @@ export default {
       MainBar,
       HeroAbout,
       Footer   
-      }
+      },
+      data() {
+   return {     
+       pagename: "https://cdn.cve.so/img/Themes/DefaultClean/Content/images/about-us-hero-bg.webp"
+     }
+   }
+
 }
 
 </script>
