@@ -7,13 +7,6 @@
     "_name": "_0e269ef1"
   },
   {
-    "name": "AboutUsold",
-    "path": "/AboutUsold",
-    "component": "/home/dtomecko/dev/MDBTest/pages/AboutUsold.vue",
-    "chunkName": "pages/AboutUsold",
-    "_name": "_ac328c9a"
-  },
-  {
     "name": "blog",
     "path": "/blog",
     "component": "/home/dtomecko/dev/MDBTest/pages/blog/index.vue",

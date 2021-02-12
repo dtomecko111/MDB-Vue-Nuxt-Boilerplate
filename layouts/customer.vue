@@ -16,7 +16,7 @@ export default {
       SideBarCP},
   head() {
     return {
-      
+      link: [{ rel: "stylesheet",  href: "https://www.boxcarcreative.com/clients/clearview/clearview-portal/css/sb-admin-2.min.css" }  ],     
       bodyAttrs: {
         class: "page-top",
       },

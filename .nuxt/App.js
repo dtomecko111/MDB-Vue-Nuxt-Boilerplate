@@ -5,13 +5,7 @@ import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '../node_modules/bootstrap-css-only/css/bootstrap.min.css'
-
-import '../node_modules/mdbvue/lib/css/mdb.min.css'
-
 import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
-
-import '../assets/style/sb-admin-2.css'
 
 import _7705a157 from '../layouts/about.vue'
 import _2d21d098 from '../layouts/blog.vue'

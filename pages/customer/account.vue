@@ -15,5 +15,5 @@ import AccountCP from "~/components/customer/AccountCP.vue";
             TopbarCP,
             AccountCP
       }
-  }
+};
 </script>

@@ -17,7 +17,17 @@ export default {
       {
         rel: "stylesheet",
         href: "https://www.boxcarcreative.com/clients/clearview/20-CLV-WEBSITE/css/style.css?v=1.1.1",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://www.boxcarcreative.com/clients/clearview/20-CLV-WEBSITE/css/MegaMenu.css",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://www.boxcarcreative.com/clients/clearview/20-CLV-WEBSITE/css/custom.MegaMenu.css",
       }
+
+      
     ]
   },
   /*
@@ -27,7 +37,7 @@ export default {
   /*
   ** Global CSS
   */
- css: [ "assets/style/sb-admin-2.css"   ],
+ css: [  ],
   /*
   ** Plugins to load before mounting the App
   */
@@ -66,10 +76,10 @@ export default {
   ** MDB Vue module:
   */
   mdbvue: {
-    // icons: false,
-    // roboto: false,
-     css: true,
-     bootstrap: true
+     icons: true,
+     roboto: false,
+     css: false,
+     bootstrap: false
   },
   /*
   ** Build configuration
