@@ -26,6 +26,7 @@
 									<input type="checkbox" data-criteria="blue"/>
 									<span>Lowest Price</span>
 								</label>
+                                </li>
 						</ul>
 					</li>
 					<li>
