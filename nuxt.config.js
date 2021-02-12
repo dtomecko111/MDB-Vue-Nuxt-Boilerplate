@@ -1,7 +1,6 @@
 const strapiBaseUri = process.env.API_URL || "https://cvstrapi.cve.so";
 
 export default {
-  mode: 'universal',
   target: "static",
   /*
   ** Headers of the page
@@ -17,7 +16,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: "stylesheet",
-        href: "https://cdn.cve.so/img/Themes/DefaultClean/Content/css/style.min.css",
+        href: "https://www.boxcarcreative.com/clients/clearview/20-CLV-WEBSITE/css/style.css?v=1.1.1",
       }
     ]
   },

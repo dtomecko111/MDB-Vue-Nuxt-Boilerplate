@@ -3,168 +3,144 @@
     "name": "404",
     "path": "/404",
     "component": "/home/dtomecko/dev/MDBTest/pages/404.vue",
-    "chunkName": "pages/404",
-    "_name": "_0e269ef1"
+    "chunkName": "pages/404"
   },
   {
     "name": "AboutUsold",
     "path": "/AboutUsold",
     "component": "/home/dtomecko/dev/MDBTest/pages/AboutUsold.vue",
-    "chunkName": "pages/AboutUsold",
-    "_name": "_ac328c9a"
+    "chunkName": "pages/AboutUsold"
   },
   {
     "name": "blog",
     "path": "/blog",
     "component": "/home/dtomecko/dev/MDBTest/pages/blog/index.vue",
-    "chunkName": "pages/blog/index",
-    "_name": "_5984ddfc"
+    "chunkName": "pages/blog/index"
   },
   {
     "name": "cp",
     "path": "/cp",
     "component": "/home/dtomecko/dev/MDBTest/pages/cp.vue",
-    "chunkName": "pages/cp",
-    "_name": "_d3854d78"
+    "chunkName": "pages/cp"
   },
   {
     "name": "customer",
     "path": "/customer",
     "component": "/home/dtomecko/dev/MDBTest/pages/customer/index.vue",
-    "chunkName": "pages/customer/index",
-    "_name": "_4055c890"
+    "chunkName": "pages/customer/index"
   },
   {
     "name": "password-reset",
     "path": "/password-reset",
     "component": "/home/dtomecko/dev/MDBTest/pages/password-reset.vue",
-    "chunkName": "pages/password-reset",
-    "_name": "_1fc459f4"
+    "chunkName": "pages/password-reset"
   },
   {
     "name": "RecentPosts",
     "path": "/RecentPosts",
     "component": "/home/dtomecko/dev/MDBTest/pages/RecentPosts.vue",
-    "chunkName": "pages/RecentPosts",
-    "_name": "_2b613a5e"
+    "chunkName": "pages/RecentPosts"
   },
   {
     "name": "register",
     "path": "/register",
     "component": "/home/dtomecko/dev/MDBTest/pages/register.vue",
-    "chunkName": "pages/register",
-    "_name": "_3325a53a"
+    "chunkName": "pages/register"
   },
   {
     "name": "shop-plans",
     "path": "/shop-plans",
     "component": "/home/dtomecko/dev/MDBTest/pages/shop-plans/index.vue",
-    "chunkName": "pages/shop-plans/index",
-    "_name": "_e2f15aa6"
+    "chunkName": "pages/shop-plans/index"
   },
   {
     "name": "tst",
     "path": "/tst",
     "component": "/home/dtomecko/dev/MDBTest/pages/tst.vue",
-    "chunkName": "pages/tst",
-    "_name": "_84dffde4"
+    "chunkName": "pages/tst"
   },
   {
     "name": "blog-post",
     "path": "/blog/post",
     "component": "/home/dtomecko/dev/MDBTest/pages/blog/post.vue",
-    "chunkName": "pages/blog/post",
-    "_name": "_52878566"
+    "chunkName": "pages/blog/post"
   },
   {
     "name": "customer-care-login",
     "path": "/customer-care/login",
     "component": "/home/dtomecko/dev/MDBTest/pages/customer-care/login.vue",
-    "chunkName": "pages/customer-care/login",
-    "_name": "_29c0121a"
+    "chunkName": "pages/customer-care/login"
   },
   {
     "name": "customer-account",
     "path": "/customer/account",
     "component": "/home/dtomecko/dev/MDBTest/pages/customer/account.vue",
-    "chunkName": "pages/customer/account",
-    "_name": "_617e3c13"
+    "chunkName": "pages/customer/account"
   },
   {
     "name": "customer-complete-contracts",
     "path": "/customer/complete-contracts",
     "component": "/home/dtomecko/dev/MDBTest/pages/customer/complete-contracts.vue",
-    "chunkName": "pages/customer/complete-contracts",
-    "_name": "_152aab97"
+    "chunkName": "pages/customer/complete-contracts"
   },
   {
     "name": "customer-contracts",
     "path": "/customer/contracts",
     "component": "/home/dtomecko/dev/MDBTest/pages/customer/contracts.vue",
-    "chunkName": "pages/customer/contracts",
-    "_name": "_501eae07"
+    "chunkName": "pages/customer/contracts"
   },
   {
     "name": "customer-documents",
     "path": "/customer/documents",
     "component": "/home/dtomecko/dev/MDBTest/pages/customer/documents.vue",
-    "chunkName": "pages/customer/documents",
-    "_name": "_65aae8c4"
+    "chunkName": "pages/customer/documents"
   },
   {
     "name": "customer-refer-a-friend",
     "path": "/customer/refer-a-friend",
     "component": "/home/dtomecko/dev/MDBTest/pages/customer/refer-a-friend.vue",
-    "chunkName": "pages/customer/refer-a-friend",
-    "_name": "_77170c7e"
+    "chunkName": "pages/customer/refer-a-friend"
   },
   {
     "name": "state-page-ct",
     "path": "/state-page/ct",
     "component": "/home/dtomecko/dev/MDBTest/pages/state-page/ct.vue",
-    "chunkName": "pages/state-page/ct",
-    "_name": "_8dd886a4"
+    "chunkName": "pages/state-page/ct"
   },
   {
     "name": "about-us-slug",
     "path": "/about-us/:slug?",
     "component": "/home/dtomecko/dev/MDBTest/pages/about-us/_slug.vue",
-    "chunkName": "pages/about-us/_slug",
-    "_name": "_04858770"
+    "chunkName": "pages/about-us/_slug"
   },
   {
     "name": "articles-slug",
     "path": "/articles/:slug?",
     "component": "/home/dtomecko/dev/MDBTest/pages/articles/_slug.vue",
-    "chunkName": "pages/articles/_slug",
-    "_name": "_781da20f"
+    "chunkName": "pages/articles/_slug"
   },
   {
     "name": "categories-slug",
     "path": "/categories/:slug?",
     "component": "/home/dtomecko/dev/MDBTest/pages/categories/_slug.vue",
-    "chunkName": "pages/categories/_slug",
-    "_name": "_0dd4776e"
+    "chunkName": "pages/categories/_slug"
   },
   {
     "name": "customer-care-slug",
     "path": "/customer-care/:slug",
     "component": "/home/dtomecko/dev/MDBTest/pages/customer-care/_slug.vue",
-    "chunkName": "pages/customer-care/_slug",
-    "_name": "_1fc1b294"
+    "chunkName": "pages/customer-care/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/home/dtomecko/dev/MDBTest/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_42b05d4b"
+    "chunkName": "pages/index"
   },
   {
     "name": "slug",
     "path": "/:slug",
     "component": "/home/dtomecko/dev/MDBTest/pages/_slug.vue",
-    "chunkName": "pages/_slug",
-    "_name": "_40f9bc03"
+    "chunkName": "pages/_slug"
   }
 ]
