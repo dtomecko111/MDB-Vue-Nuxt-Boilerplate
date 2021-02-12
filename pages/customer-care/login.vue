@@ -27,7 +27,7 @@
 			  <a href="">First Time User? Create an Account</a>
 			  <a href="/customer-care/password-reset">Forgot your password?</a>
        
-              <button onclick="window.location.href = 'rates-plans-wrates.html';" type="button" class="btn btn-secondary">Sign In</button>
+              <button onclick="window.location.href = '/customer';" type="button" class="btn btn-primary">Sign In</button>
           </form>
         </div>
 			  

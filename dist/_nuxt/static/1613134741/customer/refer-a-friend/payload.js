@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/customer/refer-a-friend", {data:[{}],fetch:[],mutations:[]});

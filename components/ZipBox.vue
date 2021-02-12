@@ -39,7 +39,7 @@ export default {
       try {
         
 
-        this.$router.push('/')
+        this.$router.push('/shop-plans')
       } catch (e) {
         this.error = e.response.data.message
       }

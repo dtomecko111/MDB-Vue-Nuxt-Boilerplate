@@ -1,6 +1,7 @@
 <template>
 <div>
-<TopicSections />
+<TopicSections /> 
+ <!-- <img :src="`https://cdn.cve.so/img/Themes/DefaultClean/Content/images/${this.slug.toLowerCase()}-hero-bg.webp`"> -->
 </div>
 </template>
 
@@ -15,5 +16,5 @@ import TopicSections from "~/components/TopicSections.vue";
 </script>
 
 <style>
- <img :src="`https://cdn.cve.so/img/Themes/DefaultClean/Content/images/${this.slug.toLowerCase()}-hero-bg.webp`">
+ 
 </style>

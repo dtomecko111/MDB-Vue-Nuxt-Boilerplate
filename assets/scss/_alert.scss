@@ -1,0 +1,17 @@
+/* Custom Alerts */
+
+.alert{
+	
+	align-items: center;
+	
+	&.acc-num{
+		
+		padding:0;
+	}
+	
+	i{
+		margin-right:10px;
+		font-size: 1.5rem;
+		color:$primary;
+	}
+}

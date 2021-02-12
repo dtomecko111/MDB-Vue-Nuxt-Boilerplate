@@ -28,6 +28,13 @@
     "_name": "_d3854d78"
   },
   {
+    "name": "customer",
+    "path": "/customer",
+    "component": "/home/dtomecko/dev/MDBTest/pages/customer/index.vue",
+    "chunkName": "pages/customer/index",
+    "_name": "_4055c890"
+  },
+  {
     "name": "password-reset",
     "path": "/password-reset",
     "component": "/home/dtomecko/dev/MDBTest/pages/password-reset.vue",
@@ -47,6 +54,13 @@
     "component": "/home/dtomecko/dev/MDBTest/pages/register.vue",
     "chunkName": "pages/register",
     "_name": "_3325a53a"
+  },
+  {
+    "name": "shop-plans",
+    "path": "/shop-plans",
+    "component": "/home/dtomecko/dev/MDBTest/pages/shop-plans/index.vue",
+    "chunkName": "pages/shop-plans/index",
+    "_name": "_e2f15aa6"
   },
   {
     "name": "tst",
@@ -70,11 +84,53 @@
     "_name": "_29c0121a"
   },
   {
+    "name": "customer-account",
+    "path": "/customer/account",
+    "component": "/home/dtomecko/dev/MDBTest/pages/customer/account.vue",
+    "chunkName": "pages/customer/account",
+    "_name": "_617e3c13"
+  },
+  {
+    "name": "customer-complete-contracts",
+    "path": "/customer/complete-contracts",
+    "component": "/home/dtomecko/dev/MDBTest/pages/customer/complete-contracts.vue",
+    "chunkName": "pages/customer/complete-contracts",
+    "_name": "_152aab97"
+  },
+  {
+    "name": "customer-contracts",
+    "path": "/customer/contracts",
+    "component": "/home/dtomecko/dev/MDBTest/pages/customer/contracts.vue",
+    "chunkName": "pages/customer/contracts",
+    "_name": "_501eae07"
+  },
+  {
+    "name": "customer-documents",
+    "path": "/customer/documents",
+    "component": "/home/dtomecko/dev/MDBTest/pages/customer/documents.vue",
+    "chunkName": "pages/customer/documents",
+    "_name": "_65aae8c4"
+  },
+  {
+    "name": "customer-refer-a-friend",
+    "path": "/customer/refer-a-friend",
+    "component": "/home/dtomecko/dev/MDBTest/pages/customer/refer-a-friend.vue",
+    "chunkName": "pages/customer/refer-a-friend",
+    "_name": "_77170c7e"
+  },
+  {
     "name": "state-page-ct",
     "path": "/state-page/ct",
     "component": "/home/dtomecko/dev/MDBTest/pages/state-page/ct.vue",
     "chunkName": "pages/state-page/ct",
     "_name": "_8dd886a4"
+  },
+  {
+    "name": "about-us-slug",
+    "path": "/about-us/:slug?",
+    "component": "/home/dtomecko/dev/MDBTest/pages/about-us/_slug.vue",
+    "chunkName": "pages/about-us/_slug",
+    "_name": "_04858770"
   },
   {
     "name": "articles-slug",
@@ -89,6 +145,13 @@
     "component": "/home/dtomecko/dev/MDBTest/pages/categories/_slug.vue",
     "chunkName": "pages/categories/_slug",
     "_name": "_0dd4776e"
+  },
+  {
+    "name": "customer-care-slug",
+    "path": "/customer-care/:slug",
+    "component": "/home/dtomecko/dev/MDBTest/pages/customer-care/_slug.vue",
+    "chunkName": "pages/customer-care/_slug",
+    "_name": "_1fc1b294"
   },
   {
     "name": "index",

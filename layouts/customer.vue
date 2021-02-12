@@ -8,7 +8,12 @@
 </template>
 
 <script>
+import {mdbContainer} from 'mdbvue';
+  import SideBarCP from "~/components/customer/SideBarCP.vue";
 export default {
+      components: {
+      mdbContainer,    
+      SideBarCP},
   head() {
     return {
       

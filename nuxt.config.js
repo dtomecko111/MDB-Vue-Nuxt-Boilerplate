@@ -28,8 +28,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+ css: [ "assets/style/sb-admin-2.css"   ],
   /*
   ** Plugins to load before mounting the App
   */
@@ -71,7 +70,7 @@ export default {
     // icons: false,
     // roboto: false,
      css: true,
-     bootstrap: false
+     bootstrap: true
   },
   /*
   ** Build configuration

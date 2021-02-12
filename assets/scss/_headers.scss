@@ -1,0 +1,25 @@
+/* headers */
+
+.primary-header{
+	
+	background:$cyan url("../img/landscape@2x.png")no-repeat bottom right;
+	min-height:260px;
+	padding-bottom:8rem;
+	
+		
+	@include media-breakpoint-up(lg){
+			
+		padding:0;
+	}
+	
+	.card-body{
+		
+		width:100%;
+		max-width:768px;
+		
+	}
+	
+	p{
+		color:$white;
+	}
+}

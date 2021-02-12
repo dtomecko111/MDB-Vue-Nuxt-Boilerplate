@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/about-us/who-we-are", {data:[{slug:"who-we-are"}],fetch:[],mutations:[]});

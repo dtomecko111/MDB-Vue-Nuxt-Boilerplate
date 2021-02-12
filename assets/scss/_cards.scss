@@ -1,0 +1,113 @@
+// Custom Card Styling
+
+.card {
+	
+	font-weight:400;
+	box-shadow:$box-shadow;
+	margin-bottom:$grid-gutter-width;
+	
+  .card-header {
+	  
+	  background:$primary;
+	  color:$white;
+    // Format Dropdowns in Card Headings
+    .dropdown {
+      line-height: 1;
+      .dropdown-menu {
+        line-height: 1.5;
+      }
+    }
+  }
+		
+	&__half{
+		
+		display: flex;
+		justify-content: center;
+		
+		
+		@include media-breakpoint-up(lg){
+			
+			width:50%;
+	
+		}
+	}	
+	
+	&__icon{
+		
+		display: none;
+		font-size:5rem;
+		color: fade-out($white, 0.9);
+		
+		@include media-breakpoint-up(lg){
+			display: block;
+		}
+	}
+	
+	.btn{
+		
+		width:100%;
+	}
+	
+	
+	
+  // Collapsable Card Styling
+  .card-header[data-toggle="collapse"] {
+    text-decoration: none;
+    position: relative;
+    padding: 0.75rem 3.25rem 0.75rem 1.25rem;
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding-right: 1.725rem;
+      line-height: 51px;
+      font-weight: 900;
+      content: '\f107';
+      font-family: 'Font Awesome 5 Free';
+      color: $gray-400;
+    }
+    &.collapsed {
+      border-radius: $card-border-radius;
+      &::after {
+        content: '\f105';
+      }
+    }
+  }
+	
+	
+	&.bg-primary{
+		color:$white;
+	}
+	
+	
+	.referal{
+		
+		.fa-check-circle{
+			
+			color:$green;
+			font-size:3rem;
+			
+		}
+	}
+}
+
+.card-horizontal{
+	
+	flex-direction: column;
+	align-items:center;
+	margin-bottom:$grid-gutter-width;
+	 background: none;
+	
+	
+	@include media-breakpoint-up(lg){
+		
+			flex-direction:row;
+	        background: linear-gradient(90deg, $blue 50%, $white 50%);
+	} 
+
+	
+}
+
+
+
+

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/customer-care/password-reset", {data:[{slug:"password-reset"}],fetch:[],mutations:[]});
