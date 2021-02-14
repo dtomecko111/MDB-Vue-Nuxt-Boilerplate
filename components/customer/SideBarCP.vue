@@ -1,5 +1,7 @@
 <template>
   <!-- Sidebar -->
+ 
+  
   <ul
     id="accordionSidebar"
     class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
@@ -36,15 +38,33 @@
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
-      <button id="sidebarToggle" class="rounded-circle border-0" />
+      <button id="sidebarToggle" class="rounded-circle border-0" v-on:click="toggleClick"/>
     </div>
   </ul>
+   
+            
 </template>
 
 <script>
+import Vue from "vue";
+import { SidebarPlugin } from '@syncfusion/ej2-vue-navigations';
+import { enableRipple } from '@syncfusion/ej2-base';
+Vue.use(SidebarPlugin);
+
 export default {
+    show: true,
+    collapsed: false,
+    methods: {
+        toggleClick: function() {
+           this.$refs.dockSidebar.toggle();
+        }
+    },
   data() {
     return {
+       enableDock:  true,
+            dockSize : '72px',
+            width : '220px',
+            position :'Left',
       drawer: true,
       items: [
         { icon: "fas fa-fw fa-tachometer-alt", title: "Dashboard", route: "/customer" },

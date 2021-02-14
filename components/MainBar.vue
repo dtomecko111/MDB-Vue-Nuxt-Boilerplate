@@ -1,64 +1,70 @@
 <template>
-  <div class="main-header">
+<div class="main-header">
     <div class="container">
       <div class="row align-items-streach justify-content-between">
         <div class="main-header-logo"> <a href="/"><img src="https://cdn.cve.so/img/Themes/DefaultClean/Content/images/clearview_logo.webp" alt="Clearview Energy"></a> </div>
-        <nav id="site-navigation">
-          <ul class="mega-menu megaMenu" data-isrtlenabled="false" data-enableclickfordropdown="false">
-            <li class="has-sublist"><a href="/aboutus" class="with-subcategories" title="About us"><span> About Us</span></a>
-              <div class="plus-button"></div>
-              <div class="sublist-wrap">
-                <ul class="sublist">
-                  <li class="back-button"><span>Back</span></li>
-                  <li><a href="who-we-are.html" title="Who We Are"><span> Who We Are</span></a></li>
-                  <li><a href="why-choose-clearview.html" title="Why Choose Clearview"><span> Why Choose Clearview</span></a></li>
-                  <li><a href="partnerships.html" title="Partnerships"><span> Partnerships</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="rates-plans.html" title="Electricity Rates &amp; Plans" class=""><span> Electricity Rates &amp; Plans</span></a></li>
-            <li class="has-sublist"><a href="customer-care.html" class="with-subcategories" title="Customer Care"><span> Customer Care</span></a>
-              <div class="plus-button"></div>
-              <div class="sublist-wrap">
-                <ul class="sublist">
-                  <li class="back-button"><span>Back</span></li>
-                  <li><a href="payment-options.html" title="Payment Options"><span> Payment Options</span></a></li>
-                  <li><a href="support.html" title="Support"><span> Support</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="has-sublist"><a href="living-green.html" class="with-subcategories" title="Living Green"><span> Living Green</span></a>
-              <div class="plus-button"></div>
-              <div class="sublist-wrap">
-                <ul class="sublist">
-                  <li class="back-button"><span>Back</span></li>
-                  <li><a href="what-is-green-energy.html" title="What is Green Energy"><span> What is Green Energy?</span></a></li>
-                  <li><a href="going-green.html" title="Going Green"><span>Going Green</span></a></li>
-                  <li><a href="renewable-sources.html" title="Renewable Sources"><span> Renewable Sources</span></a></li>
-                  <li><a href="live-green.html" title="Live Green"><span>Live Green - News &amp; Events</span></a></li>
-                  <li><a href="energy-choice.html" title="Energy Choice"><span>Energy Choice</span></a></li>
-                  <li><a href="energy-saving-tips.html" title="Energy Saving Tips"><span>Energy Saving Tips</span></a></li>
-                  <li><a href="what-is-deregulation.html" title="What is Deregulation"><span> What is Deregulation</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="clearview-rewards.html" title="Clearview Rewards"><span> Clearview Rewards</span></a></li>
-            <li><a href="contact.html" title="Contact Us"><span> Contact Us</span></a></li>
-          </ul>         
-        </nav>
-        <mdb-btn color="light-green"><a href="tel:+800-746-4702" id="telBtn" ><span class="d-none d-xl-block">+800-746-4702</span></a> </mdb-btn>
-        <div class="header-contact"> </div>
-      </div>
-    </div>
-  </div>
+      
+<ejs-menu :items='menuItems'></ejs-menu>
+</div>
+</div>
+</div>
 </template>
 
 <script>
+import Vue from 'vue';
+import { MenuPlugin } from "@syncfusion/ej2-vue-navigations";
+import { enableRipple } from '@syncfusion/ej2-base';
+
+enableRipple(true);
+Vue.use(MenuPlugin);
+
 export default {
-
+  data: function() {
+    return {
+        //Menu items definition
+        menuItems:   [
+            {
+               text: 'About us',
+                items: [
+                    { text: 'Who We Are', url: '/about-us/who-we-are'},
+                     { text: 'Why Choose Clearview', url: '/about-us/why-choose-clearview'},
+                    { text: 'Partnerships', url: '/about-us/partnerships'}
+                ]
+            , url: '/about-us' 
+            },
+            {
+             text: 'Rates & Plans',
+                items: [
+                    { text: 'Areas We Serve', url: '/rates-and-plans/areas-we-serve'}
+                ]
+            , url: '/rates-and-plans' },
+            {
+               text: 'Customer Care',
+                items: [
+                    { text: 'FAQ', url: '/customer-care/faq'},
+                     { text: 'Outage Report', url: '/customer-care/outage-report'},
+                    { text: 'Referral Program', url: '/customer-care/referral-program'},
+                     { text: 'What is Deregulation', url: '/customer-care/login'}
+                ]
+            , url: '/customer-care' 
+            },
+            {
+               text: 'Living Green',
+                items: [
+                    { text: 'What is Green Energy', url: '/living-green/what-is-green-energy'},
+                    { text: 'Renewable Sources', url: '/living-green/renewable-sources'},
+                    { text: 'Live Green - News & Events', url: '/living-green/live-green-blog'},
+                    { text: 'Energy Choice', url: '/living-green/energy-choice'},
+                    { text: 'Energy Saving Tips', url: '/living-green/energy-saving-tips'},
+                    { text: 'Energy Choice', url: '/living-green/what-is-deregulation'}
+                ]
+            , url: '/living-green' 
+            },
+            { text: 'Clearview Rewards', url: '/clearview-rewards' },           
+            { text: 'Contact Us', url: '/contact-us' }
+        ]
+    };
+  }
 }
+
 </script>
-
-<style >
-
-</style>

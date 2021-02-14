@@ -14,8 +14,10 @@ import _6f6c098b from '../layouts/default.vue'
 import _4d6c34bc from '../layouts/defaultold.vue'
 import _77dd5794 from '../layouts/plain.vue'
 import _780b425b from '../layouts/state.vue'
+import _2d29e588 from '../layouts/test.vue'
+import _2d2a170f from '../layouts/tryt.vue'
 
-const layouts = { "_about": sanitizeComponent(_7705a157),"_blog": sanitizeComponent(_2d21d098),"_customer": sanitizeComponent(_7bcfb5d4),"_default": sanitizeComponent(_6f6c098b),"_defaultold": sanitizeComponent(_4d6c34bc),"_plain": sanitizeComponent(_77dd5794),"_state": sanitizeComponent(_780b425b) }
+const layouts = { "_about": sanitizeComponent(_7705a157),"_blog": sanitizeComponent(_2d21d098),"_customer": sanitizeComponent(_7bcfb5d4),"_default": sanitizeComponent(_6f6c098b),"_defaultold": sanitizeComponent(_4d6c34bc),"_plain": sanitizeComponent(_77dd5794),"_state": sanitizeComponent(_780b425b),"_test": sanitizeComponent(_2d29e588),"_tryt": sanitizeComponent(_2d2a170f) }
 
 export default {
   render (h, props) {

@@ -1,10 +1,12 @@
 <template>
-  <mdb-carousel
+ <div class="card primary-header">  
+   <mdb-carousel>
     :interval="8000"
     slide
     :items="items"
-    indicators
-  ></mdb-carousel>
+    indicators   
+  </mdb-carousel>
+   </div>
 </template>
 
 <script>
@@ -20,7 +22,7 @@
           {
             img: true,
             src:
-              "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+              "https://www.boxcarcreative.com/clients/clearview/clearview-portal/img/blog.png"
           },
           {
             img: true,

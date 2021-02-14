@@ -7,6 +7,13 @@
     "_name": "_0e269ef1"
   },
   {
+    "name": "areas-we-serve",
+    "path": "/areas-we-serve",
+    "component": "/home/dtomecko/dev/MDBTest/pages/areas-we-serve.vue",
+    "chunkName": "pages/areas-we-serve",
+    "_name": "_fe78e5e4"
+  },
+  {
     "name": "blog",
     "path": "/blog",
     "component": "/home/dtomecko/dev/MDBTest/pages/blog/index.vue",
@@ -54,6 +61,13 @@
     "component": "/home/dtomecko/dev/MDBTest/pages/shop-plans/index.vue",
     "chunkName": "pages/shop-plans/index",
     "_name": "_e2f15aa6"
+  },
+  {
+    "name": "sytst",
+    "path": "/sytst",
+    "component": "/home/dtomecko/dev/MDBTest/pages/sytst.vue",
+    "chunkName": "pages/sytst",
+    "_name": "_2bce60b0"
   },
   {
     "name": "tst",
@@ -110,6 +124,20 @@
     "component": "/home/dtomecko/dev/MDBTest/pages/customer/refer-a-friend.vue",
     "chunkName": "pages/customer/refer-a-friend",
     "_name": "_77170c7e"
+  },
+  {
+    "name": "customer-test",
+    "path": "/customer/test",
+    "component": "/home/dtomecko/dev/MDBTest/pages/customer/test.vue",
+    "chunkName": "pages/customer/test",
+    "_name": "_45bdf9c8"
+  },
+  {
+    "name": "customer-test2",
+    "path": "/customer/test2",
+    "component": "/home/dtomecko/dev/MDBTest/pages/customer/test2.vue",
+    "chunkName": "pages/customer/test2",
+    "_name": "_71d1ec74"
   },
   {
     "name": "state-page-ct",

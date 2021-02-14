@@ -5,6 +5,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _0e269ef1 = () => interopDefault(import('../pages/404.vue' /* webpackChunkName: "pages/404" */))
+const _fe78e5e4 = () => interopDefault(import('../pages/areas-we-serve.vue' /* webpackChunkName: "pages/areas-we-serve" */))
 const _5984ddfc = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
 const _d3854d78 = () => interopDefault(import('../pages/cp.vue' /* webpackChunkName: "pages/cp" */))
 const _4055c890 = () => interopDefault(import('../pages/customer/index.vue' /* webpackChunkName: "pages/customer/index" */))
@@ -12,6 +13,7 @@ const _1fc459f4 = () => interopDefault(import('../pages/password-reset.vue' /* w
 const _2b613a5e = () => interopDefault(import('../pages/RecentPosts.vue' /* webpackChunkName: "pages/RecentPosts" */))
 const _3325a53a = () => interopDefault(import('../pages/register.vue' /* webpackChunkName: "pages/register" */))
 const _e2f15aa6 = () => interopDefault(import('../pages/shop-plans/index.vue' /* webpackChunkName: "pages/shop-plans/index" */))
+const _2bce60b0 = () => interopDefault(import('../pages/sytst.vue' /* webpackChunkName: "pages/sytst" */))
 const _84dffde4 = () => interopDefault(import('../pages/tst.vue' /* webpackChunkName: "pages/tst" */))
 const _52878566 = () => interopDefault(import('../pages/blog/post.vue' /* webpackChunkName: "pages/blog/post" */))
 const _29c0121a = () => interopDefault(import('../pages/customer-care/login.vue' /* webpackChunkName: "pages/customer-care/login" */))
@@ -20,6 +22,8 @@ const _152aab97 = () => interopDefault(import('../pages/customer/complete-contra
 const _501eae07 = () => interopDefault(import('../pages/customer/contracts.vue' /* webpackChunkName: "pages/customer/contracts" */))
 const _65aae8c4 = () => interopDefault(import('../pages/customer/documents.vue' /* webpackChunkName: "pages/customer/documents" */))
 const _77170c7e = () => interopDefault(import('../pages/customer/refer-a-friend.vue' /* webpackChunkName: "pages/customer/refer-a-friend" */))
+const _45bdf9c8 = () => interopDefault(import('../pages/customer/test.vue' /* webpackChunkName: "pages/customer/test" */))
+const _71d1ec74 = () => interopDefault(import('../pages/customer/test2.vue' /* webpackChunkName: "pages/customer/test2" */))
 const _8dd886a4 = () => interopDefault(import('../pages/state-page/ct.vue' /* webpackChunkName: "pages/state-page/ct" */))
 const _04858770 = () => interopDefault(import('../pages/about-us/_slug.vue' /* webpackChunkName: "pages/about-us/_slug" */))
 const _781da20f = () => interopDefault(import('../pages/articles/_slug.vue' /* webpackChunkName: "pages/articles/_slug" */))
@@ -49,6 +53,10 @@ export const routerOptions = {
     component: _0e269ef1,
     name: "404"
   }, {
+    path: "/areas-we-serve",
+    component: _fe78e5e4,
+    name: "areas-we-serve"
+  }, {
     path: "/blog",
     component: _5984ddfc,
     name: "blog"
@@ -76,6 +84,10 @@ export const routerOptions = {
     path: "/shop-plans",
     component: _e2f15aa6,
     name: "shop-plans"
+  }, {
+    path: "/sytst",
+    component: _2bce60b0,
+    name: "sytst"
   }, {
     path: "/tst",
     component: _84dffde4,
@@ -108,6 +120,14 @@ export const routerOptions = {
     path: "/customer/refer-a-friend",
     component: _77170c7e,
     name: "customer-refer-a-friend"
+  }, {
+    path: "/customer/test",
+    component: _45bdf9c8,
+    name: "customer-test"
+  }, {
+    path: "/customer/test2",
+    component: _71d1ec74,
+    name: "customer-test2"
   }, {
     path: "/state-page/ct",
     component: _8dd886a4,

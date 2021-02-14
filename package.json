@@ -19,6 +19,8 @@
     "mdbvue": "git+https://oauth2:J6F2-ry8LsgtmovpEVTN@git.mdbootstrap.com/mdb/vue/vu-pro.git",
     "nuxt": "^2.14.12",
     "vue": "^2.6.12",
-    "uikit": "^3.6.14"
+    "uikit": "^3.6.14",
+    "@syncfusion/ej2-base": "latest",
+    "@syncfusion/ej2-vue-navigations": "latest"
   }
 }

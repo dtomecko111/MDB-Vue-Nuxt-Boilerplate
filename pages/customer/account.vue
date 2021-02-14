@@ -1,8 +1,7 @@
 <template>
-  <div id="content">
-    <TopbarCP />
+
     <AccountCP />
-  </div>
+
 </template>
 
 
@@ -10,7 +9,7 @@
 import TopbarCP from "~/components/customer/TopbarCP.vue";
 import AccountCP from "~/components/customer/AccountCP.vue";
   export default {
-      layout: 'customer',
+      layout: 'tryt',
        components: {
             TopbarCP,
             AccountCP

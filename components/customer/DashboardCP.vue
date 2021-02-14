@@ -1,7 +1,8 @@
 <template>
   <!-- Begin Page Content -->
   <div class="container-fluid">
-    <OwlCP />
+
+    
     <div class="row py-4">
       <div class="col-md-6">
         <!-- Home Card -->
@@ -111,10 +112,12 @@
   <!-- /.container-fluid -->
 </template>
 
-<style>
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
+<script>
+import Caro from "~/components/Caro.vue";
+export default {
+ components: {
+             Caro
+      }
 }
-</style>
+</script>
+
